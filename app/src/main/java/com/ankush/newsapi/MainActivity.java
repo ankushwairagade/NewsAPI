@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity  implements CategoryRvAdapat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
         progressBar=findViewById(R.id.progressbar);
         newsRV=findViewById(R.id.recycleViewNews);
         catRV= findViewById(R.id.catMenu);
@@ -45,16 +49,15 @@ public class MainActivity extends AppCompatActivity  implements CategoryRvAdapat
         newsRV.setAdapter(newsRvAdapater);
         catRV.setAdapter(categoryRvAdapater);
         getCategories();
-        getNews("ALL");
+        getNews("All");
         newsRvAdapater.notifyDataSetChanged();
-
 
 
     }
 
     private void getCategories()
     {     // category     = business , entertainment  general  health  science    sports  technology
-        categoryRvAdapaterArrayList.add(new CategoryRvModel("ALL","https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"));
+        categoryRvAdapaterArrayList.add(new CategoryRvModel("All","https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"));
         categoryRvAdapaterArrayList.add(new CategoryRvModel("Business","https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"));
         categoryRvAdapaterArrayList.add(new CategoryRvModel("Entertainment","https://images.unsplash.com/photo-1549342902-be005322599a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"));
         categoryRvAdapaterArrayList.add(new CategoryRvModel("Health","https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"));

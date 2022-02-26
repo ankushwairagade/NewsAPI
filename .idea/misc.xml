@@ -6,9 +6,9 @@
         <entry key="app/src/main/res/drawable/ic_icons8_news.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_news__1_.xml" value="0.114" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_news_deatil.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/menu_item.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/news_item.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_news_deatil.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/menu_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/news_item.xml" value="0.1" />
       </map>
     </option>
   </component>

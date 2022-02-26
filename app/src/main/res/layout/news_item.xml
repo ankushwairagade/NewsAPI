@@ -8,7 +8,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+
+        >
 
         <ImageView
             android:id="@+id/newsImage"
@@ -28,7 +30,7 @@
             android:maxLines="2"
             android:padding="3dp"
             android:text="topic"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -41,10 +43,10 @@
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="3dp"
-            android:maxLines="3"
+            android:maxLines="6"
             android:padding="3dp"
             android:text="Subheading"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

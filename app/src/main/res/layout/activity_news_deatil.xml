@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blackli"
+    android:theme="@android:style/Theme.NoTitleBar"
     tools:context=".NewsDeatilActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:background="@color/teal_700"
         app:title="News App"
         app:titleTextColor="@color/white" />
@@ -17,36 +20,84 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar">
-
-        <ImageView
-            android:id="@+id/newimage"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/idBtnReader"
+        >
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_margin="3dp"
-            android:padding="3dp"
-            android:scaleType="centerCrop" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/newimage"
-            android:id="@+id/title"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:padding="4dp"
-            android:layout_margin="4dp"
-            />
+            <ImageView
+                android:id="@+id/idIView"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:padding="3dp"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/idITitle"
+                android:layout_below="@+id/idIView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:padding="4dp"
+                android:layout_margin="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Description"
+                android:layout_below="@+id/idITitle"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:id="@+id/idISubdesc"
+                android:textSize="18sp"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/title"
+            <TextView
+                android:id="@+id/idIcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idISubdesc"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="Content"
+                android:textColor="@color/white" />
 
 
-    </ScrollView>
 
 
+
+        </RelativeLayout>
+
+
+
+
+
+</ScrollView>
+
+    <Button
+        android:id="@+id/idBtnReader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:text="READ Full NEWS"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+         />
 
 </RelativeLayout>
