@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/main/java/com/ankush/newsapi/API_token.txt
+/app/src/main/java/com/ankush/newsapi/API_toeken_key
+
